@@ -1,14 +1,14 @@
 import React from 'react';
-import {Pressable, Text, View, StyleSheet } from 'react-native';
+import {Pressable, Text, View, StyleSheet} from 'react-native';
 
 const Button = ({title, onPress}) => {
-  return (
-      <Pressable onPress={onPress} style={({ pressed }) => [{ opacity: pressed ? 0.7 : 1 }, styles.button]}>
-          <View style={styles.buttonInner}>
-              <Text style={styles.buttonText}>{title}</Text>
-      </View>
-    </Pressable>
-  );
+    return (
+        <Pressable onPress={onPress} style={({pressed}) => [{opacity: pressed ? 0.7 : 1}, styles.button]}>
+            <View style={styles.buttonInner}>
+                <Text style={styles.buttonText}>{title}</Text>
+            </View>
+        </Pressable>
+    );
 };
 
 const styles = StyleSheet.create({
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         overflow: 'hidden',
     },
     buttonInner: {
-        backgroundColor: '#636e72',  // A soft gray color
+        backgroundColor: '#f5f5dc',
         paddingVertical: 10,
         paddingHorizontal: 20,
         alignItems: 'center',
